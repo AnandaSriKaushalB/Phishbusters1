@@ -8,6 +8,6 @@ motor==3.3.2
 torch==2.9.0
 sentence-transformers==2.2.2
 scikit-learn==1.4.0
-pandas==2.1.4
+pandas==2.2.3
 numpy==1.26.3
 passlib[bcrypt]==1.7.4
