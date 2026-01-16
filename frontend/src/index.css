@@ -1,0 +1,101 @@
+:root {
+  --primary: #2563eb;
+  --primary-soft: #e0edff;
+  --danger: #ef4444;
+  --warning: #f97316;
+  --success: #22c55e;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a 0, #020617 45%, #020617 100%);
+  color: #f9fafb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Generic card */
+.card {
+  background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(30,64,175,0.85));
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 18px 45px rgba(15,23,42,0.7);
+  border: 1px solid rgba(148,163,184,0.35);
+  backdrop-filter: blur(18px);
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out, border-color 0.2s;
+}
+
+/* Lift on hover for cards that are hoverable */
+.card--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(15,23,42,0.9);
+  border-color: rgba(129,140,248,0.75);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 999px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, box-shadow 0.15s ease-out, background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+  color: #f9fafb;
+  box-shadow: 0 12px 25px rgba(37,99,235,0.55);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 35px rgba(59,130,246,0.7);
+}
+
+.btn-secondary {
+  background: rgba(15,23,42,0.7);
+  color: #e5e7eb;
+  border: 1px solid rgba(148,163,184,0.7);
+}
+
+.btn-secondary:hover {
+  background: rgba(15,23,42,0.92);
+  transform: translateY(-1px);
+}
+
+/* Pill filter buttons */
+.btn-filter {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.btn-filter--active {
+  background: rgba(37,99,235,0.15);
+  color: #e0edff;
+  border-color: rgba(96,165,250,0.9);
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(37,99,235,0.3), rgba(15,23,42,0.92));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Scroll styling inside modal */
+.modal-body-scroll {
+  max-height: 320px;
+  overflow: auto;
+}
+
+/* Fancy heading gradient */
+.heading-gradient {
+  background: linear-gradient(to right, #e5e7eb, #93c5fd);
+  -webkit-background-clip: text;
+  color: transparent;
+}
